@@ -1022,7 +1022,7 @@ header {
 	text-decoration: none;
 	color: var(--black);
 	font-size: 5rem;
-	letter-spacing: .5rem;
+	letter-spacing: 0.105em;
 }
 
 
