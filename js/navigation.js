@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		if ( 'undefined' === typeof button ) {
 			return;
 		}
+
+		button.innerText = "≡";
 	
 		const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
 	

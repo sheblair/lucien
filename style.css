@@ -1055,7 +1055,16 @@ header {
 	color: black;
 }
 
+.main-navigation button {
+	border: none;
+	background-color: var(--calm-blue);
+	color: black;
+	font-size: 1.4rem;
+}
 
+.main-navigation.toggled button {
+	display: block;
+}
 
 @media screen and (min-width: 900px) {
 	/* hide the mobile menu*/
