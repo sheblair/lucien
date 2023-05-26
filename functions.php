@@ -142,7 +142,7 @@ function lucien_scripts() {
 	wp_enqueue_style( 'lucien-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'lucien-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'lucien-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'lucien-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, false);
 	wp_enqueue_style( 'lucien-google-fonts', 'https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&display=swap' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

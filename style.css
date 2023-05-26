@@ -991,12 +991,15 @@ body {
 }
 
 /* MOBILE STYLES */
+
+/* hide the sidebar menu */
 #nav_menu-2 {
 	display: none;
 }
 
 
 @media screen and (min-width: 900px) {
+	/* hide the mobile menu*/
 	#site-navigation {
 		display: none;
 	}
