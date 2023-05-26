@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			return;
 		}
 
-		button.innerText = "≡";
+		button.innerText = "";
 	
 		const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
 	

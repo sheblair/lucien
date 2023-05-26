@@ -27,6 +27,8 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
+			<span></span>
+			<span></span>
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lucien' ); ?></button>
 			<?php
 			wp_nav_menu(
@@ -37,7 +39,7 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
-		
+
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
