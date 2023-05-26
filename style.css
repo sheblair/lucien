@@ -659,45 +659,46 @@ textarea {
 	padding-left: 0;
 }
 
-.main-navigation ul ul {
+/* .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 100%;
 	left: -999em;
 	z-index: 99999;
-}
+} */
 
-.main-navigation ul ul ul {
+/* .main-navigation ul ul ul {
 	left: -999em;
 	top: 0;
-}
+} */
 
-.main-navigation ul ul li:hover > ul,
+/* .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
 	display: block;
 	left: auto;
-}
+} */
 
-.main-navigation ul ul a {
+/* .main-navigation ul ul a {
 	width: 200px;
-}
+} */
 
-.main-navigation ul li:hover > ul,
+/* .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
-}
-
+} */
+/* 
 .main-navigation li {
 	position: relative;
-}
+} */
 
-.main-navigation a {
+/* .main-navigation a {
 	display: block;
 	text-decoration: none;
-}
+} */
 
-/* Small menu. */
+/* Small menu */
+/*
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -712,7 +713,7 @@ textarea {
 	.main-navigation ul {
 		display: flex;
 	}
-}
+} */
 
 .site-main .comment-navigation,
 .site-main
@@ -997,6 +998,53 @@ body {
 	display: none;
 }
 
+.page-container {
+	margin: 20px;
+}
+
+/* HEADER - MOBILE */
+header {
+	margin: 20px;
+}
+
+.site-branding {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.custom-logo-link {
+	width: 60%;
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+.site-title a {
+	text-decoration: none;
+	color: var(--black);
+	font-size: 2rem;
+	letter-spacing: .05em;
+}
+
+/* NAV - MOBILE */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+.main-navigation ul {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--calm-blue);
+	z-index: 9999;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+
 
 @media screen and (min-width: 900px) {
 	/* hide the mobile menu*/
@@ -1014,7 +1062,7 @@ body {
 	}
 
 	.site-branding {
-		display: flex;
+		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
 		margin: 20px;
@@ -1023,7 +1071,6 @@ body {
 	.custom-logo-link {
 		width: 12%;
 		max-width: 20%;
-		margin: 0 auto;
 	}
 
 	.site-title {
@@ -1033,8 +1080,6 @@ body {
 	}
 
 	.site-title a {
-		text-decoration: none;
-		color: var(--black);
 		font-size: 5rem;
 		letter-spacing: 0.105em;
 	}
