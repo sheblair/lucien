@@ -50,6 +50,7 @@ function lucien_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'lucien' ),
+			'sidebar-menu' => esc_html__('Sidebar', 'lucien')
 		)
 	);
 
