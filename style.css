@@ -991,6 +991,10 @@ body {
     background: var(--calm-blue);
 }
 
+.fixed {
+	position: fixed;
+}
+
 /* MOBILE STYLES */
 
 /* hide the sidebar menu */
@@ -1027,37 +1031,15 @@ header {
 }
 
 /* NAV - MOBILE */
+
+/* navigation ul and button styles */
+.main-navigation {
+	padding-top: 20px;
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
-}
-
-#site-navigation {
-	position: fixed;
-	background-color: var(--calm-blue);
-}
-
-.main-navigation ul {
-	position: fixed;
-	top: 35px;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: var(--calm-blue);
-	z-index: 2;
-	padding: 20px;
-	box-sizing: border-box;
-	margin-top: 20px;
-  
-  	transform-origin: 0% 0%;
-  	transform: translate(-100%, 0);
-  
-  	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-/* display the menu */
- .main-navigation.toggled ul {
-   transform: none;
 }
 
 .main-navigation ul li {
@@ -1086,15 +1068,41 @@ header {
 	z-index: 2;
 }
 
-/* style the hamburger */
+.main-navigation ul {
+	position: fixed;
+	top: 35px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--calm-blue);
+	z-index: 2;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+  
+  	transform-origin: 0% 0%;
+  	transform: translate(-100%, 0);
+  
+  	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+/* show the menu */
+ .main-navigation.toggled ul {
+   transform: none;
+}
+
+/* hamburger menu styles */
+
+/* style the spans */
 .main-navigation span {
 	display: block;
 	width: 33px;
 	height: 4px;
+	margin-left: 20px;
 	margin-bottom: 5px;
-	position: fixed;
-	top: 30px;
-	left: 30px;
+	position: relative;
+	/* top: 30px;
+	left: 30px; */
 	background: black;
 	border-radius: 3px;
 	z-index: 1;
@@ -1105,10 +1113,12 @@ header {
 	cursor: pointer;
 }
 
+/* first span */
 .main-navigation span:first-child {
   transform-origin: 40% 0%;
 }
 
+/* second span */
 .main-navigation span:nth-child(2) {
   transform-origin: 0% 100%;
 }
@@ -1116,13 +1126,13 @@ header {
 /* transform the hamburger */
 .main-navigation.toggled span:first-child {
    opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
+   transform: rotate(45deg) translate(-5px, 0px);
    background: #232323;
 }
  
- /* last one goes opposite direction */
+ /* second one goes opposite direction */
 .main-navigation.toggled span:nth-child(2) {
-   transform: rotate(-45deg) translate(0, -1px);
+   transform: rotate(-45deg) translate(0, 0);
 }
 
 @media screen and (min-width: 900px) {
