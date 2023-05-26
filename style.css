@@ -1067,6 +1067,7 @@ header {
 
 .main-navigation button {
 	border: none;
+	opacity: 0;
 	background-color: var(--calm-blue);
 	color: black;
 	font-size: 2rem;
@@ -1077,6 +1078,7 @@ header {
     height: 40px;
     left: 10px;
 	cursor: pointer;
+	z-index: 9999;
 }
 
 /* style the hamburger */
