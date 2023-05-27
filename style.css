@@ -1115,8 +1115,6 @@ header {
 	margin-left: 20px;
 	margin-bottom: 5px;
 	position: relative;
-	/* top: 30px;
-	left: 30px; */
 	background: black;
 	border-radius: 3px;
 	z-index: 1;
@@ -1168,6 +1166,13 @@ header {
 	text-align: center;
 }
 
+/* BREAKPOINT FOR XTRA SMALL PHONES */
+@media screen and (max-width: 374px) {
+	.site-title a {
+		font-size: 1.4rem;
+	}
+}
+
 /*
 *
 *
@@ -1194,9 +1199,17 @@ TABLET STYLES
 		display: flex;
 		justify-content: center;
 	}
+	/* tablet image styles */
+	.homepage-img, .about-img, .offerings-img {
+		width: 80%;
+	}
 
 	img:not(.custom-logo) {
 		width: 60%;
+	}
+
+	.offerings-img {
+		margin-bottom: 40px;
 	}
 
 	/* HEADER - TABLET */
@@ -1214,11 +1227,6 @@ TABLET STYLES
 		margin-right: 20px;
 	}
 
-	.site-title a {
-		font-size: 3rem;
-		letter-spacing: 0.115em;
-	}
-
 	/* TABLET NAV */
 	.main-navigation ul li {
 		font-size: 1.8rem;
@@ -1226,8 +1234,29 @@ TABLET STYLES
 
 }
 
+/* BREAKPOINTS FOR HEADER ON LARGE TABLET */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+	.site-title a {
+		font-size: 2rem;
+		letter-spacing: 0.115em;
+	}
+}
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+	.site-title a {
+		font-size: 3rem;
+	}
+}
+
+/*
+*
+*
+MEDIUM DESKTOP STYLES
+*
+*
+*
+*/
+@media screen and (min-width: 1200px) {
 	/* hide the mobile menu*/
 	#site-navigation {
 		display: none;
@@ -1271,7 +1300,7 @@ TABLET STYLES
 	}
 
 	.site-title a {
-		font-size: 5rem;
+		font-size: 4rem;
 		letter-spacing: 0.105em;
 	}
 
@@ -1301,7 +1330,7 @@ TABLET STYLES
 		height: 100%;
 		width: 15%;
 		background-color: var(--calm-blue);
-		margin-left: 30px;
+		margin-left: 35px;
 	}
 
 	#nav_menu-2 {
@@ -1313,6 +1342,7 @@ TABLET STYLES
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin: 0 0 0 30px
 	}
 
 	#menu-left-sidebar li {
@@ -1333,7 +1363,7 @@ TABLET STYLES
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-		align-items: center;
+		align-items: flex-start;
 		margin-left: 200px;
 	}
 
@@ -1381,3 +1411,41 @@ TABLET STYLES
 	}
 }
 
+/*
+*
+*
+LARGE & XL DESKTOP STYLES
+*
+*
+*
+*/
+@media screen and (min-width: 1400px) {
+	#secondary {
+		top: 220px;
+	}
+
+	#homepage {
+		align-items: flex-start;
+	}
+
+	#about-page, #homepage {
+		margin-left: 260px;
+		margin-top: 40px;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	#secondary {
+		top: 240px;
+		margin-left: 40px;
+	}
+
+	.custom-logo-link {
+		width: 10%;
+		max-width: 10%;
+	}
+
+	#homepage {
+		margin-top: 60px;
+	}
+}
