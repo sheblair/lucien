@@ -645,9 +645,10 @@ textarea {
 # Components
 --------------------------------------------------------------*/
 
-/* Navigation
+/* Navigation -- fully commented out, replaced
+by custom styles below under LUCIEN CUSTOM STYLES
 --------------------------------------------- */
-.main-navigation {
+/* .main-navigation {
 	display: block;
 	width: 100%;
 }
@@ -659,47 +660,48 @@ textarea {
 	padding-left: 0;
 }
 
-/* .main-navigation ul ul {
+.main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 100%;
 	left: -999em;
 	z-index: 99999;
-} */
+}
 
-/* .main-navigation ul ul ul {
+.main-navigation ul ul ul {
 	left: -999em;
 	top: 0;
-} */
+}
 
-/* .main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
 	display: block;
 	left: auto;
-} */
+}
 
-/* .main-navigation ul ul a {
+.main-navigation ul ul a {
 	width: 200px;
-} */
+}
 
-/* .main-navigation ul li:hover > ul,
+.main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
-} */
-/* 
+}
+
+
 .main-navigation li {
 	position: relative;
-} */
+}
 
-/* .main-navigation a {
+.main-navigation a {
 	display: block;
 	text-decoration: none;
-} */
+}
 
 /* Small menu */
-/*
-.menu-toggle,
+
+/* .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
@@ -713,7 +715,7 @@ textarea {
 	.main-navigation ul {
 		display: flex;
 	}
-} */
+}  */
 
 .site-main .comment-navigation,
 .site-main
@@ -995,7 +997,15 @@ body {
 	position: fixed;
 }
 
-/* MOBILE STYLES */
+/* 
+*
+*
+*
+MOBILE STYLES
+*
+*
+*
+*/
 
 /* hide the sidebar menu */
 #nav_menu-2 {
@@ -1003,7 +1013,11 @@ body {
 }
 
 .page-container {
-	margin: 20px;
+	margin: 25px;
+}
+
+p {
+	font-size: 1.2rem;
 }
 
 /* HEADER - MOBILE */
@@ -1023,23 +1037,53 @@ header {
 	margin: 0 auto;
 }
 
+.site-title {
+	margin-bottom: 0;
+}
+
 .site-title a {
 	text-decoration: none;
 	color: var(--black);
 	font-size: 2rem;
-	letter-spacing: .05em;
+	letter-spacing: .07em;
 }
 
-/* NAV - MOBILE */
+/* MOBILE NAV */
 
-/* navigation ul and button styles */
+/* navigation menu and button styles */
 .main-navigation {
+	display: block;
+	width: 100%;
 	padding-top: 20px;
 }
 
-.menu-toggle,
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	position: fixed;
+	top: 35px;
+	width: 100%;
+	height: 100%;
+	background-color: var(--calm-blue);
+	z-index: 2;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	transform-origin: 0% 0%;
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+/* slide out to the left*/
+.main-navigation ul {
+	left: -100%;
+	transform: translateX(-100%);
+}
+
+/* slide in from the left */
 .main-navigation.toggled ul {
-	display: block;
+	left: 0;
+	transform: translateX(0%);
 }
 
 .main-navigation ul li {
@@ -1060,35 +1104,12 @@ header {
 	font-size: 2rem;
 	padding: 10px;
 	position: absolute;
-    top: 10px;
+    top: 20px;
+	left: 30px;
     width: 55px;
-    height: 40px;
-    left: 10px;
+    height: 50px;
 	cursor: pointer;
 	z-index: 2;
-}
-
-.main-navigation ul {
-	position: fixed;
-	top: 35px;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: var(--calm-blue);
-	z-index: 2;
-	padding: 20px;
-	box-sizing: border-box;
-	margin-top: 20px;
-  
-  	transform-origin: 0% 0%;
-  	transform: translate(-100%, 0);
-  
-  	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-/* show the menu */
- .main-navigation.toggled ul {
-   transform: none;
 }
 
 /* hamburger menu styles */
