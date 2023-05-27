@@ -1178,6 +1178,7 @@ TABLET STYLES
 *
 */
 @media screen and (min-width: 600px) {
+	/* GENERAL PAGE STYLES - TABLET */
 	.page-container {
 		margin: 0 50px;
 	}
@@ -1223,8 +1224,6 @@ TABLET STYLES
 		font-size: 1.8rem;
 	}
 
-	/* HOMEPAGE - TABLET */
-
 }
 
 
@@ -1239,22 +1238,29 @@ TABLET STYLES
 		font-size: 1rem;
 	}
 
+	/* desktop image styles */
+	.homepage-img, .about-img, .offerings-img {
+		width: 40%;
+	}
+
 	/* HEADER - DESKTOP */
-	/* header {
+	header {
 		position: fixed;
 		top: 0;
 		left: 0;
 		background-color: var(--calm-blue);
 		z-index: 9999;
+		margin: 0;
 	}
 
 	.site-branding {
 		justify-content: space-between;
+		padding-top: 10px;
 	}
 
 	.custom-logo-link {
 		width: 12%;
-		max-width: 20%;
+		max-width: 12%;
 		margin: 0 auto;
 	}
 
@@ -1267,7 +1273,7 @@ TABLET STYLES
 	.site-title a {
 		font-size: 5rem;
 		letter-spacing: 0.105em;
-	} */
+	}
 
 
 	/* PAGE - DESKTOP */
@@ -1290,7 +1296,7 @@ TABLET STYLES
 	/* SIDEBAR - DESKTOP */
 	#secondary {
 		position: fixed;
-		top: 220px;
+		top: 200px;
 		left: 0;
 		height: 100%;
 		width: 15%;
@@ -1323,7 +1329,7 @@ TABLET STYLES
 	}
 
 	/* HOMEPAGE - DESKTOP */
-	/* #homepage {
+	#homepage {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -1336,15 +1342,7 @@ TABLET STYLES
 		font-size: 1.3rem;
 	}
 
-	.homepage-img {
-		width: 30%;
-	} */
-
 	/* ABOUT - DESKTOP */
-	/* .about-img {
-		width: 30%;
-	}
-
 	.about-text {
 		width: 50%;
 		display: flex;
@@ -1361,10 +1359,10 @@ TABLET STYLES
 		justify-content: space-evenly;
 		align-items: flex-start;
 		margin-left: 200px;
-	} */
+	}
 
 	/* OFFERINGS - DESKTOP */
-	/* #offerings-page {
+	#offerings-page {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -1378,12 +1376,8 @@ TABLET STYLES
 		width: 40%;
 	}
 
-	.offerings-img {
-		width: 25%;
-	}
-
 	.offering p {
 		font-size: 1.5rem;
-	} */
+	}
 }
 
