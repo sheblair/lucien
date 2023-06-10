@@ -50,16 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		} );
 	
-		// remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
-		// button.addEventListener( 'click', function() {
-		// 	const isClickInside = menu.contains( event.target );
-	
-		// 	if ( isClickInside ) {
-		// 		siteNavigation.classList.remove( 'toggled' );
-		// 		button.setAttribute( 'aria-expanded', 'false' );
-		// 	}
-		// } );
-	
 		// get all the link elements within the menu
 		const links = menu.getElementsByTagName( 'a' );
 	

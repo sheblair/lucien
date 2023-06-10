@@ -1,9 +1,9 @@
 /*!
 Theme Name: Lucien
-Theme URI: http://underscores.me/
+Theme URI: https://github.com/sheblair/lucien
 Author: Sheila Blair
 Author URI: https://www.sheilablair.com
-Description: Description
+Description: Custom WordPress theme for Brother Lucien Vedego
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
@@ -11,9 +11,6 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: Lucien
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
 
 Lucien is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -42,12 +39,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Media
 	- Captions
 	- Galleries
-# plugins
+# Plugins
 	- Jetpack infinite scroll
 # Utilities
 	- Accessibility
 	- Alignments
-
+### Lucien Custom Styles
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -234,12 +231,12 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-/* button,
+button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-	-webkit-appearance: button;
-} */
+	appearance: button;
+}
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -320,17 +317,17 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* [type="search"] {
-	-webkit-appearance: textfield;
+[type="search"] {
+	appearance: textfield;
 	outline-offset: -2px;
-} */
+}
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-/* [type="search"]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
-} */
+}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -644,79 +641,6 @@ textarea {
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-
-/* Navigation -- fully commented out, replaced
-by custom styles below under LUCIEN CUSTOM STYLES
---------------------------------------------- */
-/* .main-navigation {
-	display: block;
-	width: 100%;
-}
-
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	display: block;
-	left: auto;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-
-.main-navigation li {
-	position: relative;
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-
-/* Small menu */
-
-/* .menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-	}
-}  */
-
 .site-main .comment-navigation,
 .site-main
 .posts-navigation,
@@ -972,9 +896,8 @@ by custom styles below under LUCIEN CUSTOM STYLES
 }
 
 /* ------------------------------------------------------------ 
-LUCIEN CUSTOM STYLES START HERE -------------------------------------- 
+### Lucien Custom Styles -------------------------------------- 
 ------------------------------------------------------------ */
-
 /* BASE STYLES */
 :root {
     --calm-blue: #B8D0D6;
@@ -988,7 +911,7 @@ LUCIEN CUSTOM STYLES START HERE --------------------------------------
 
 body {
     font-family: 'Cormorant', serif;
-    font-weight: 300;
+	font-size: 16px;
     background: var(--calm-blue);
 }
 
@@ -1006,6 +929,8 @@ MOBILE STYLES
 *
 */
 
+/* BASE STYLES - MOBILE */
+
 /* hide the sidebar menu */
 #nav_menu-2 {
 	display: none;
@@ -1018,6 +943,7 @@ MOBILE STYLES
 p {
 	font-size: 1.2rem;
 }
+
 
 /* HEADER - MOBILE */
 header {
@@ -1291,12 +1217,14 @@ MEDIUM DESKTOP STYLES
 		width: 12%;
 		max-width: 12%;
 		margin: 0 auto;
+		border: 2px solid rgba(39, 38, 38, 0.1);
 	}
 
 	.site-title {
 		width: 80%;
 		margin: 0;
-		padding-left: 20px;
+		padding: 30px;
+		border: 2px solid rgba(39, 38, 38, 0.1);
 	}
 
 	.site-title a {
@@ -1342,7 +1270,8 @@ MEDIUM DESKTOP STYLES
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 0 0 0 30px
+		margin: 0 0 0 30px;
+		border: 2px solid rgba(39, 38, 38, 0.1);
 	}
 
 	#menu-left-sidebar li {

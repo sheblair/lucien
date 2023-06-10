@@ -16,22 +16,12 @@ get_header();
 
 		<main id="primary" class="site-main">
 			<?php
-			while ( have_posts() ) : the_post();
-				$about_text = get_field('about_text');
-				$about_image = get_field('about_image');
-				$size = 'full';
+				while ( have_posts() ) : the_post();
 
+				get_template_part( 'template-parts/content', 'about' );
+
+			endwhile; // End of the loop.
 			?>
-
-			<div id="about-page">
-				<div class="about-text">
-					<?php echo $about_text; ?>
-				</div>
-				<figure class="about-img">
-					<?php echo wp_get_attachment_image($about_image, $size) ?>
-				</figure>
-			</div>
-
-			<?php endwhile; ?> <!-- End of the loop -->
 	    </main><!-- #main -->
+		
     </div>

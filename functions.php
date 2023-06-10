@@ -143,7 +143,7 @@ function lucien_scripts() {
 	wp_style_add_data( 'lucien-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'lucien-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, false);
-	wp_enqueue_style( 'lucien-google-fonts', 'https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&display=swap' );
+	wp_enqueue_style( 'lucien-google-fonts', 'https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
