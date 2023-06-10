@@ -15,13 +15,16 @@ get_header();
 		<?php get_sidebar(); ?>
 
 		<main id="primary" class="site-main">
-			<?php
-				while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'about' );
-
-			endwhile; // End of the loop.
-			?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<div id="about-page">
+					<div class="about-text">
+						<?php the_content(); ?>
+					</div>
+					<figure class="about-img">
+						<?php lucien_post_thumbnail(); ?>
+					</figure>
+				</div>
+			<?php endwhile; // End of the loop. ?>
 	    </main><!-- #main -->
 		
     </div>
