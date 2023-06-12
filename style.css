@@ -530,17 +530,18 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #000000;
+	text-decoration: none;
 }
 
 a:visited {
-	color: #800080;
+	color: #000000;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: #000000;
 }
 
 a:focus {
@@ -912,12 +913,15 @@ textarea {
 body {
     font-family: 'Cormorant', serif;
 	font-size: 16px;
+	color: #000000;
     background: var(--calm-blue);
 }
 
 .fixed {
 	position: fixed;
 }
+
+/* links, headings, body text - bold, italic - */
 
 /* 
 *

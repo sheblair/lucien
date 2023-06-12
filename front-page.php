@@ -14,18 +14,12 @@ get_header();
 		<?php get_sidebar(); ?>
 
 		<main id="primary" class="site-main">
-			<?php
-			while ( have_posts() ) : the_post();
-				$homepage_text = get_field('homepage_text');
-				$homepage_image = get_field('homepage_image');
-				$size = 'full';
-
-			?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
 			<div id="homepage">
-				<p class="homepage-text"><?php echo $homepage_text; ?></p>
+				<p class="homepage-text"><?php the_content(); ?></p>
 				<figure class="homepage-img">
-					<?php echo wp_get_attachment_image($homepage_image, $size) ?>
+					<?php lucien_post_thumbnail(); ?>
 				</figure>
 			</div>
 

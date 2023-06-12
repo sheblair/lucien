@@ -151,6 +151,24 @@ function lucien_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'lucien_scripts' );
 
+/* register custom post types */
+function create_custom_post_types() {
+    register_post_type( 'offerings',
+        array(
+            'labels' => array(
+                'name' => __( 'Offerings' ),
+                'singular_name' => __( 'offering' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'offerings' ),
+			'menu_position' => 5,
+        )
+    );
+}
+add_action( 'init', 'create_custom_post_types' );
+
+
 /**
  * Implement the Custom Header feature.
  */
