@@ -160,9 +160,10 @@ function create_custom_post_types() {
                 'singular_name' => __( 'offering' )
             ),
             'public' => true,
-            'has_archive' => true,
+            'has_archive' => false,
             'rewrite' => array( 'slug' => 'offerings' ),
 			'menu_position' => 5,
+			'publicly_queryable'  => false,
         )
     );
 }

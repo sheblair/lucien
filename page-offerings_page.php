@@ -20,15 +20,12 @@ get_header();
 				$size = "full";
 			?>
 
-			<div id="offerings-page">
+			<div class="page" id="offerings-page">
 				<figure class="offerings-img">
 					<?php echo wp_get_attachment_image( $offerings_image, $size ); ?>
 				</figure>
 				<div class="offerings-container">
-					<div class="offering">
-                        <?php the_title(); ?>
-                        <?php the_content(); ?>
-                    </div>
+                    <?php get_template_part( 'template-parts/content', 'offerings' ); ?>
 				</div>
 			</div>
 
