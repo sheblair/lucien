@@ -1193,6 +1193,10 @@ MEDIUM DESKTOP STYLES
 		font-size: 1rem;
 	}
 
+	figure, img {
+		margin: 15px 0;
+	}
+
 	/* desktop image styles */
 	img:not(.custom-logo) {
 		width: 80%;
@@ -1330,14 +1334,21 @@ MEDIUM DESKTOP STYLES
 	}
 
 	/* ABOUT - DESKTOP */
+	#about {
+		margin-left: 40px;
+		margin-top: 60px;
+	}
+
 	.about-text {
 		width: 50%;
-		display: flex;
-		flex-direction: column;
 	}
 
 	.about-text p {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
+	}
+
+	.about-images {
+		width: 50%;
 	}
 
 	/* OFFERINGS - DESKTOP */
@@ -1352,6 +1363,7 @@ MEDIUM DESKTOP STYLES
 	#offerings-page figure {
 		width: 50%;
 		margin-left: 20px;
+		margin-top: 0;
 	}
 
 	.offerings-container {

@@ -22,7 +22,7 @@ get_header();
 				$about_image_4 = get_field('about_image_4');
 				$size = "full";
 			?>
-				<div class="page">
+				<div class="page" id="about">
 					<div class="about-text">
 						<?php the_content(); ?>
 					</div>
