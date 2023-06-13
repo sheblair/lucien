@@ -1344,23 +1344,38 @@ MEDIUM DESKTOP STYLES
 	#offerings-page {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: flex-start;
 		align-items: flex-start;
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 
 	#offerings-page figure {
 		width: 50%;
+		margin-left: 20px;
 	}
 
 	.offerings-container {
 		display: flex;
 		flex-direction: column;
-		width: 40%;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+	}
+
+	.offering {
+		width: 60%;
+		margin: 10px 0;
+	}
+
+	.offering h1, .offering h2,
+	.offering h3, .offering h4,
+	.offering h5, .offering h6 {
+		margin-bottom: 20px;
 	}
 
 	.offering p {
 		font-size: 1.5rem;
+		text-align: center;
 	}
 }
 
