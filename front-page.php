@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the landing page
+ * The template for displaying the home page
  *
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
@@ -19,11 +19,13 @@ get_header();
 				$homepage_image_2 = get_field('homepage_image_2');
 				$homepage_image_3 = get_field('homepage_image_3');
 				$homepage_image_4 = get_field('homepage_image_4');
-				$size = "full";
+				$size = "small";
 			?>
 
 			<div class="page">
-				<p class="homepage-text"><?php the_content(); ?></p>
+				<div class="homepage-text">
+					<?php the_content(); ?>
+				</div>
 				<div class="home-images">
 						<figure class="img">
 							<?php echo wp_get_attachment_image( $homepage_image_1, $size ) ?>

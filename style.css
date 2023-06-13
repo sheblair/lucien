@@ -1192,7 +1192,7 @@ MEDIUM DESKTOP STYLES
 
 	/* desktop image styles */
 	img:not(.custom-logo) {
-		width: 40%;
+		width: 80%;
 	}
 
 	/* HEADER - DESKTOP */
@@ -1203,34 +1203,45 @@ MEDIUM DESKTOP STYLES
 		background-color: var(--calm-blue);
 		z-index: 9999;
 		margin: 0;
+		width: 100%;
 	}
 
 	.site-branding {
 		justify-content: flex-start;
+		align-items: center;
 		padding-top: 10px;
 		margin: 0 10px;
-		width: 100%;
+		width: 98.5%;
 	}
 
 	.custom-logo-link {
-		width: 15%;
-		max-width: 15%;
+		width: 250px;
+		max-width: 250px;
+		height: 220px;
 		border: 2px solid rgba(39, 38, 38, 0.1);
 		margin-right: 0;
+		display: flex;
+		align-items: center;
 	}
 
 	.site-title {
-		width: 80%;
+		width: 100%;
+		height: 220px;
 		margin: 0;
-		border: 2px solid rgba(39, 38, 38, 0.1);
-		padding: 2.4rem;
+		border-top: 2px solid rgba(39, 38, 38, 0.1);
+		border-right: 2px solid rgba(39, 38, 38, 0.1);
+		border-bottom: 2px solid rgba(39, 38, 38, 0.1);
+		padding: 3.5rem;
+		display: flex;
+		align-items: center;
 	}
 
 	.site-title a {
-		font-size: 4rem;
-		letter-spacing: 0.105em;
+		font-size: 5rem;
+		letter-spacing: 0.115em;
 	}
 
+	/* add breakpoint for site title font size in between tab and desktop */
 
 	/* PAGE - DESKTOP */
 	/* hide page title */
@@ -1245,7 +1256,7 @@ MEDIUM DESKTOP STYLES
 
 	.page-container {
 		display: flex;
-		margin: 189px 0 0 0;
+		margin: 230px 0 0 0;
 	}
 
 	.page {
@@ -1253,12 +1264,10 @@ MEDIUM DESKTOP STYLES
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: flex-start;
+		margin: 0;
 	}
 
 	/* SIDEBAR - DESKTOP */
-	#secondary {
-	}
-
 	#nav_menu-2 {
 		display: block;
 	}
@@ -1268,8 +1277,11 @@ MEDIUM DESKTOP STYLES
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		border: 2px solid rgba(39, 38, 38, 0.1);
+		border-left: 2px solid rgba(39, 38, 38, 0.1);
+		border-right: 2px solid rgba(39, 38, 38, 0.1);
+		border-bottom: 2px solid rgba(39, 38, 38, 0.1);
 		margin-left: 10px;
+		width: 210px;
 	}
 
 	#menu-left-sidebar li {
@@ -1286,9 +1298,24 @@ MEDIUM DESKTOP STYLES
 	}
 
 	/* HOMEPAGE - DESKTOP */
+	.home-images {
+		margin-top: 40px;
+	}
+
 	.homepage-text {
+		margin-top: 80px;
+		margin-left: 30px;
 		width: 40%;
-		font-size: 1.3rem;
+	}
+
+	.homepage-text p {
+		font-size: 1.2rem;
+	}
+
+	.home-images {
+		display: flex;
+		flex-direction: column;
+		width: 40%;
 	}
 
 	/* ABOUT - DESKTOP */
