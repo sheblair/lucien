@@ -25,21 +25,21 @@ get_header();
 			<div class="page">
 				<p class="homepage-text"><?php the_content(); ?></p>
 				<div class="home-images">
-						<figure class="home-img">
+						<figure class="img">
 							<?php echo wp_get_attachment_image( $homepage_image_1, $size ) ?>
 						</figure>
 						<?php if($homepage_image_2): ?>
-							<figure class="home-img">
+							<figure class="img">
 								<?php echo wp_get_attachment_image( $homepage_image_2, $size ) ?>
 							</figure>
 						<?php endif; ?>
 						<?php if($homepage_image_3): ?>
-							<figure class="home-img">
+							<figure class="img">
 								<?php echo wp_get_attachment_image( $homepage_image_3, $size ) ?>
 							</figure>
 						<?php endif; ?>
 						<?php if($homepage_image_4): ?>
-							<figure class="home-img">
+							<figure class="img">
 								<?php echo wp_get_attachment_image( $homepage_image_4, $size ) ?>
 							</figure>
 						<?php endif; ?>

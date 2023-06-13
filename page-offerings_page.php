@@ -21,7 +21,7 @@ get_header();
 			?>
 
 			<div class="page" id="offerings-page">
-				<figure class="offerings-img">
+				<figure class="img">
 					<?php echo wp_get_attachment_image( $offerings_image, $size ); ?>
 				</figure>
 				<div class="offerings-container">
