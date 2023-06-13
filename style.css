@@ -1216,6 +1216,7 @@ MEDIUM DESKTOP STYLES
 
 	.custom-logo-link {
 		width: 250px;
+		min-width: 220px;
 		max-width: 250px;
 		height: 220px;
 		border: 2px solid rgba(39, 38, 38, 0.1);
@@ -1237,7 +1238,7 @@ MEDIUM DESKTOP STYLES
 	}
 
 	.site-title a {
-		font-size: 5rem;
+		font-size: 4.6rem;
 		letter-spacing: 0.115em;
 	}
 
@@ -1281,7 +1282,7 @@ MEDIUM DESKTOP STYLES
 		border-right: 2px solid rgba(39, 38, 38, 0.1);
 		border-bottom: 2px solid rgba(39, 38, 38, 0.1);
 		margin-left: 10px;
-		width: 210px;
+		width: 115%;
 	}
 
 	#menu-left-sidebar li {
