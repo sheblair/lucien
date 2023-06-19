@@ -912,7 +912,7 @@ textarea {
 }
 
 body {
-    font-family: 'Cormorant', serif;
+    font-family: 'Times New Roman', Times, serif;
 	font-size: 16px;
 	color: #000000;
     background: var(--calm-blue);
@@ -1072,7 +1072,6 @@ header {
 
 .site-title a {
 	font-size: 2rem;
-	font-weight: 300;
 	letter-spacing: .07em;
 }
 
@@ -1083,16 +1082,8 @@ header {
 	align-items: center;
 }
 
-.offering h1, .offering h2,
-.offering h3, .offering h4,
-.offering h5, .offering h6 {
-	text-transform: uppercase;
-	font-weight: 300;
-}
-
 .offering p {
 	text-align: center;
-	font-weight: 300;
 }
 
 /* BREAKPOINT FOR XTRA SMALL PHONES */
@@ -1322,7 +1313,6 @@ MEDIUM DESKTOP STYLES
 	#menu-left-sidebar li {
 		margin: 20px 0;
 		padding: 0 30px;
-		font-weight: 300;
 		text-align: center;
 	}
 
@@ -1330,7 +1320,6 @@ MEDIUM DESKTOP STYLES
 		color: black;
 		text-decoration: none;
 		font-size: 2.5rem;
-		font-weight: 300;
 		line-height: 2.8rem;
 	}
 
