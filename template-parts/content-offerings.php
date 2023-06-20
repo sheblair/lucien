@@ -17,7 +17,6 @@
     while ( $loop -> have_posts() ) { $loop->the_post(); ?>
 
         <div class="offering">
-            <?php the_title(); ?>
             <?php the_content(); ?>
         </div>
 
