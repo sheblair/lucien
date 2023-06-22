@@ -1322,7 +1322,7 @@ MEDIUM DESKTOP STYLES
 		width: 237px;
 	}
 
-	#menu-left-sidebar li:first-child {
+	#menu-left-sidebar ul:not(.sub-menu) li:first-child {
 		margin-top: 70px;
 	}
 
@@ -1342,6 +1342,14 @@ MEDIUM DESKTOP STYLES
 	/* sub-menu item styles */
 	.sub-menu {
 		display: none;
+		position: relative;
+    	top: 0px;
+    	left: 120px;
+    	background-color: var(--calm-blue);
+	}
+
+	.menu-item-has-children:hover .sub-menu {
+		display: block;
 	}
 
 	/* HOMEPAGE - DESKTOP */
