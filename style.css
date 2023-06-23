@@ -516,6 +516,7 @@ object {
 img {
 	height: auto;
 	max-width: 100%;
+	margin: .5em 0;
 }
 
 figure {
@@ -919,9 +920,9 @@ body {
     background: var(--background-color);
 }
 
-figure, img:not(.custom-logo) {
+/* figure, img:not(.custom-logo) {
 	margin: 20px 0;
-}
+} */
 
 /* links, headings, body text (bold, italic), 
 .wp-block-image, .size-full, other image size classes */
@@ -1217,9 +1218,9 @@ MEDIUM DESKTOP STYLES
 		font-size: 1rem;
 	}
 
-	figure, img {
+	/* figure, img {
 		margin: 15px 0;
-	}
+	} */
 
 	/* desktop image styles */
 	img:not(.custom-logo) {
@@ -1275,33 +1276,6 @@ MEDIUM DESKTOP STYLES
 		letter-spacing: 0.115em;
 	}
 
-	/* add breakpoint for site title font size in between tab and desktop */
-
-	/* PAGE - DESKTOP */
-	/* hide page title */
-	.entry-header {
-		display: none;
-	}
-
-	/* hide post edit link */
-	.post-edit-link {
-		display: none;
-	}
-
-	.page-container {
-		display: flex;
-		margin: 220px 0 0 0;
-		width: 100%;
-	}
-
-	.single-page {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: flex-start;
-		margin: 20px;
-	}
-
 	/* SIDEBAR - DESKTOP */
 	#nav_menu-2 {
 		display: block;
@@ -1349,19 +1323,55 @@ MEDIUM DESKTOP STYLES
 		display: block;
 	}
 
-	/* HOMEPAGE - DESKTOP */
-	.home-images {
-		margin-top: 40px;
+	/* add breakpoint for site title font size in between tab and desktop */
+
+	/* PAGE - DESKTOP */
+	/* hide page title */
+	.entry-header {
+		display: none;
 	}
 
+	/* hide post edit link */
+	.post-edit-link {
+		display: none;
+	}
+
+	.page-container {
+		display: flex;
+		margin: 220px 0 0 0;
+		width: 100%;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+	.single-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		margin: 30px;
+		width: 90%;
+	}
+
+	#home, #about, #offerings {
+		flex-direction: row;
+	}
+
+	/* HOMEPAGE - DESKTOP */
 	.homepage-text {
-		margin-top: 80px;
 		margin-left: 10px;
+		margin-top: 40px;
 		width: 40%;
 	}
 
 	.homepage-text p {
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 
 	.home-images {
@@ -1385,11 +1395,7 @@ MEDIUM DESKTOP STYLES
 	}
 
 	/* OFFERINGS - DESKTOP */
-	#offerings-page {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: flex-start;
+	#offerings {
 		margin-top: 30px;
 	}
 

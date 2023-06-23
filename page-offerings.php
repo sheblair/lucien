@@ -23,7 +23,7 @@ get_header();
 				$size = "full";
 			?>
 
-			<div class="single-page" id="offerings-page">
+			<div class="single-page" id="offerings">
 				<div class="offerings-images">
 					<figure>
 						<?php echo wp_get_attachment_image( $offerings_image_1, $size ); ?>

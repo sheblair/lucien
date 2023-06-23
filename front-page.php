@@ -22,7 +22,7 @@ get_header();
 				$size = "small";
 			?>
 
-			<div class="single-page">
+			<div class="single-page" id="home">
 				<div class="homepage-text">
 					<?php the_content(); ?>
 				</div>
