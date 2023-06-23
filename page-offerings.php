@@ -16,14 +16,34 @@ get_header();
 
 		<main id="primary" class="site-main">
 			<?php while ( have_posts() ) : the_post(); 
-				$offerings_image = get_field('offerings_image');
+				$offerings_image_1 = get_field('offerings_image_1');
+				$offerings_image_2 = get_field('offerings_image_2');
+				$offerings_image_3 = get_field('offerings_image_3');
+				$offerings_image_4 = get_field('offerings_image_4');
 				$size = "full";
 			?>
 
 			<div class="page" id="offerings-page">
-				<figure>
-					<?php echo wp_get_attachment_image( $offerings_image, $size ); ?>
-				</figure>
+				<div class="offerings-images">
+					<figure>
+						<?php echo wp_get_attachment_image( $offerings_image_1, $size ); ?>
+					</figure>
+					<?php if($offerings_image_2): ?>
+						<figure class="img">
+							<?php echo wp_get_attachment_image( $offerings_image_2, $size ) ?>
+						</figure>
+					<?php endif; ?>
+					<?php if($offerings_image_3): ?>
+						<figure class="img">
+							<?php echo wp_get_attachment_image( $offerings_image_3, $size ) ?>
+						</figure>
+					<?php endif; ?>
+					<?php if($offerings_image_4): ?>
+						<figure class="img">
+							<?php echo wp_get_attachment_image( $offerings_image_4, $size ) ?>
+						</figure>
+					<?php endif; ?>
+				</div>
 				<div class="offerings-container">
                     <?php get_template_part( 'template-parts/content', 'offerings' ); ?>
 				</div>

@@ -1222,8 +1222,8 @@ MEDIUM DESKTOP STYLES
 
 	/* desktop image styles */
 	img:not(.custom-logo) {
-		width: 75%;
-		max-width: 75%;
+		width: 70%;
+		max-width: 70%;
 	}
 
 	/* HEADER - DESKTOP */
@@ -1393,12 +1393,7 @@ MEDIUM DESKTOP STYLES
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: flex-start;
-		margin-top: 60px;
-	}
-
-	#offerings-page figure {
-		width: 45%;
-		margin-left: 20px;
+		margin-top: 30px;
 	}
 
 	.offerings-container {
@@ -1406,8 +1401,14 @@ MEDIUM DESKTOP STYLES
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 50%;
+		width: 45%;
 		margin-top: 30px;
+	}
+
+	.offerings-images {
+		display: flex;
+		flex-direction: column;
+		width: 40%;
 	}
 
 	.offering {
