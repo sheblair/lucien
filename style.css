@@ -1092,10 +1092,6 @@ header {
 	align-items: center;
 }
 
-.offering p {
-	text-align: center;
-}
-
 /* BREAKPOINT FOR XTRA SMALL PHONES */
 @media screen and (max-width: 374px) {
 	.site-title a {
@@ -1136,10 +1132,6 @@ TABLET STYLES
 	img:not(.custom-logo) {
 		width: 70%;
 		max-width: 70%;
-	}
-
-	.offerings-img {
-		margin-bottom: 40px;
 	}
 
 	/* HEADER - TABLET */
@@ -1335,7 +1327,7 @@ MEDIUM DESKTOP STYLES
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
-		margin: 60px 30px;
+		margin: 60px;
 		width: 90%;
 	}
 
@@ -1349,7 +1341,7 @@ MEDIUM DESKTOP STYLES
 	}
 
 	.homepage-text {
-		margin-left: 80px;
+		margin-left: 30px;
 		width: 45%;
 	}
 
@@ -1364,10 +1356,6 @@ MEDIUM DESKTOP STYLES
 		width: 45%;
 	}
 
-	.about-text p {
-		font-size: 1.2rem;
-	}
-
 	/* OFFERINGS - DESKTOP */
 	.offerings-container {
 		display: flex;
@@ -1380,11 +1368,11 @@ MEDIUM DESKTOP STYLES
 	.offerings-images {
 		display: flex;
 		flex-direction: column;
-		width: 40%;
+		width: 50%;
 	}
 
 	.offering {
-		width: 60%;
+		width: 70%;
 		margin: 10px 0;
 	}
 
@@ -1392,11 +1380,6 @@ MEDIUM DESKTOP STYLES
 	.offering h3, .offering h4,
 	.offering h5, .offering h6 {
 		margin-bottom: 20px;
-	}
-
-	.offering p {
-		font-size: 1.5rem;
-		text-align: center;
 	}
 }
 
