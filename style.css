@@ -531,18 +531,17 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: var(--font-color);
-	text-decoration: none;
+	color: var(--link-color);
 }
 
 a:visited {
-	color: var(--font-color);
+	color: var(--link-visited);
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: var(--font-color);
+	color: var(--link-color);
 }
 
 a:focus {
@@ -901,10 +900,19 @@ textarea {
 ### Lucien Custom Styles -------------------------------------- 
 ------------------------------------------------------------ */
 /* BASE STYLES */
-/* :root {
+/* 
+*
+*
+Commented out here and instead included as "Additional CSS" in the Customize menu of the WP editor,
+kept here for record of original color choices made during initial site construction, June 2023
+*
+*
+:root {
     --background-color: #B8D0D6;
 	--border-color: #2726261a;
 	--font-color: #000000;
+	--link-color: blue;
+	--link-visited: purple;
 } */
 
 * {
@@ -914,15 +922,9 @@ textarea {
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-	font-size: 16px;
 	color: var(--font-color);
     background: var(--background-color);
 }
-
-/* figure, img:not(.custom-logo) {
-	margin: 20px 0;
-} */
 
 /* links, headings, body text (bold, italic), 
 .wp-block-image, .size-full, other image size classes */
@@ -984,16 +986,10 @@ MOBILE STYLES
 	list-style: none;
 }
 
-.sub-menu ul li {
+.main-navigation .menu-item-has-children {
+	padding-top: 0;
 	padding-bottom: 0;
 }
-
-.sub-menu ul li a {
-	font-size: 1.2rem;
-	padding: 5px;
-}
-
-
 
 .main-navigation button {
 	border: none;
@@ -1060,10 +1056,6 @@ MOBILE STYLES
 	display: none;
 }
 
-p {
-	font-size: 1.2rem;
-}
-
 .page-container {
 	margin: 25px;
 }
@@ -1091,6 +1083,8 @@ header {
 .site-title a {
 	font-size: 2rem;
 	letter-spacing: .07em;
+	color: var(--font-color);
+	text-decoration: none;
 }
 
 /* OFFERINGS PAGE - MOBILE */
@@ -1133,10 +1127,6 @@ TABLET STYLES
 	.page-container {
 		width: 85%;
 		margin: 0;
-	}
-
-	p {
-		font-size: 1.3rem;
 	}
 
 	/* tablet image styles */
@@ -1214,18 +1204,10 @@ MEDIUM DESKTOP STYLES
 	}
 
 	/* GENERAL DESKTOP STYLES */
-	p {
-		font-size: 1rem;
-	}
-
-	/* figure, img {
-		margin: 15px 0;
-	} */
-
 	/* desktop image styles */
 	img:not(.custom-logo) {
-		width: 70%;
-		max-width: 70%;
+		width: 90%;
+		max-width: 90%;
 	}
 
 	/* HEADER - DESKTOP */
@@ -1293,7 +1275,7 @@ MEDIUM DESKTOP STYLES
 		width: 237px;
 	}
 
-	#menu-left-sidebar ul:not(.sub-menu) li:first-child {
+	#menu-left-sidebar li:first-child {
 		margin-top: 70px;
 	}
 
@@ -1353,9 +1335,9 @@ MEDIUM DESKTOP STYLES
 	.single-page {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: flex-start;
-		margin: 30px;
+		margin: 60px 30px;
 		width: 90%;
 	}
 
@@ -1364,14 +1346,13 @@ MEDIUM DESKTOP STYLES
 	}
 
 	/* HOMEPAGE - DESKTOP */
-	.homepage-text {
-		margin-left: 10px;
-		margin-top: 40px;
-		width: 40%;
+	#home {
+		margin-top: 80px;
 	}
 
-	.homepage-text p {
-		font-size: 1.5rem;
+	.homepage-text {
+		margin-left: 80px;
+		width: 45%;
 	}
 
 	.home-images {
@@ -1381,11 +1362,6 @@ MEDIUM DESKTOP STYLES
 	}
 
 	/* ABOUT - DESKTOP */
-	#about {
-		margin-left: 40px;
-		margin-top: 60px;
-	}
-
 	.about-text, .about-images {
 		width: 45%;
 	}
@@ -1395,17 +1371,12 @@ MEDIUM DESKTOP STYLES
 	}
 
 	/* OFFERINGS - DESKTOP */
-	#offerings {
-		margin-top: 30px;
-	}
-
 	.offerings-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: 45%;
-		margin-top: 30px;
 	}
 
 	.offerings-images {
