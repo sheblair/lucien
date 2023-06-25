@@ -949,8 +949,8 @@ MOBILE STYLES
 
 .main-navigation ul:not(.sub-menu) {
 	list-style: none;
-	margin: 0;
-	padding-left: 0;
+	margin: 20px 0 0 20px;
+	padding: 20px;
 	position: fixed;
 	top: 35px;
 	left: -100%;
@@ -958,9 +958,7 @@ MOBILE STYLES
 	height: 100%;
 	background-color: var(--background-color);
 	z-index: 2;
-	padding: 20px;
 	box-sizing: border-box;
-	margin-top: 20px;
 	transform: translateX(-100%);
 	transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
@@ -1001,7 +999,7 @@ MOBILE STYLES
 	position: absolute;
     top: 20px;
 	left: 30px;
-    width: 55px;
+    width: 95px;
     height: 50px;
 	cursor: pointer;
 	z-index: 2;
