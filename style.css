@@ -544,9 +544,9 @@ a:active {
 	color: var(--link-color);
 }
 
-a:focus {
+/* a:focus {
 	outline: thin dotted;
-}
+} */
 
 a:hover,
 a:active {
@@ -926,6 +926,10 @@ body {
     background: var(--background-color);
 }
 
+.fixed {
+	position: fixed;
+}
+
 /* links, headings, body text (bold, italic), 
 .wp-block-image, .size-full, other image size classes */
 
@@ -939,123 +943,15 @@ MOBILE STYLES
 *
 */
 
-/* MOBILE AND TABLET NAVIGATION MENU */
-/* nav menu and button styles */
-.main-navigation {
-	display: block;
-	width: 100%;
-	padding-top: 20px;
-}
 
-.main-navigation ul:not(.sub-menu) {
-	list-style: none;
-	margin: 20px 0 0 20px;
-	padding: 20px;
-	position: fixed;
-	top: 35px;
-	left: -100%;
-	width: 100%;
-	height: 100%;
-	background-color: var(--background-color);
-	z-index: 2;
-	box-sizing: border-box;
-	transform: translateX(-100%);
-	transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-}
-
-/* slide in from the left */
-.main-navigation.toggled ul {
-	left: 0;
-	transform: translateX(0%);
-}
-
-.main-navigation ul li {
-	font-size: 1.3rem;
-	padding: 10px 0 10px 20px;
-}
-
-.main-navigation ul li a {
-	text-decoration: none;
-	color: var(--font-color);
-}
-
-/* sub-menu styles */
-.sub-menu {
-	list-style: none;
-}
-
-.main-navigation .menu-item-has-children {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-.main-navigation button {
-	border: none;
-	opacity: 0;
-	background-color: var(--background-color);
-	color: var(--font-color);
-	font-size: 2rem;
-	padding: 10px;
-	position: absolute;
-    top: 20px;
-	left: 30px;
-    width: 95px;
-    height: 50px;
-	cursor: pointer;
-	z-index: 2;
-}
-
-/* hamburger menu styles */
-
-/* style the spans */
-.main-navigation span {
-	display: block;
-	width: 33px;
-	height: 4px;
-	margin-left: 20px;
-	margin-bottom: 5px;
-	position: relative;
-	background: var(--font-color);
-	border-radius: 3px;
-	z-index: 1;
-	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-				background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-				opacity 0.55s ease; 
-				
-	cursor: pointer;
-}
-
-/* first span */
-.main-navigation span:first-child {
-  transform-origin: 40% 0%;
-}
-
-/* second span */
-.main-navigation span:nth-child(2) {
-  transform-origin: 0% 100%;
-}
-
-/* transform the hamburger */
-.main-navigation.toggled span:first-child {
-   opacity: 1;
-   transform: rotate(45deg) translate(-5px, 0px);
-   background: #232323;
-}
- 
- /* second one goes opposite direction */
-.main-navigation.toggled span:nth-child(2) {
-   transform: rotate(-45deg) translate(0, 0);
-}
 
 /* BASE STYLES - MOBILE */
-
-/* hide the sidebar menu */
-#nav_menu-2 {
-	display: none;
-}
-
 .page-container {
 	margin: 25px;
+}
+
+#secondary {
+	display: none;
 }
 
 /* HEADER - MOBILE */
@@ -1154,9 +1050,9 @@ TABLET STYLES
 	}
 
 	/* TABLET NAV */
-	.main-navigation ul li {
+	/* .main-navigation ul li {
 		font-size: 1.8rem;
-	}
+	} */
 
 }
 
@@ -1193,12 +1089,24 @@ MEDIUM DESKTOP STYLES
 		display: none;
 	}
 
+	/* show sidebar menu */
+	#secondary {
+		display: block;
+	}
+
 	/* GENERAL DESKTOP STYLES */
 	/* desktop image styles */
 	img:not(.custom-logo) {
 		width: 90%;
 		max-width: 90%;
 	}
+
+	/* SIDEBAR - DESKTOP */
+	/* #mega-menu-wrap-sidebar-menu #mega-menu-sidebar-menu {
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+	} */
 
 	/* HEADER - DESKTOP */
 	header {
@@ -1246,53 +1154,6 @@ MEDIUM DESKTOP STYLES
 	.site-title a {
 		font-size: 4.7rem;
 		letter-spacing: 0.115em;
-	}
-
-	/* SIDEBAR - DESKTOP */
-	#nav_menu-2 {
-		display: block;
-	}
-
-	#menu-left-sidebar {
-		list-style: none;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		border-left: 2px solid var(--border-color);
-		border-right: 2px solid var(--border-color);
-		border-bottom: 2px solid var(--border-color);
-		margin-left: 0;
-		width: 237px;
-	}
-
-	#menu-left-sidebar li:first-child {
-		margin-top: 70px;
-	}
-
-	#menu-left-sidebar li {
-		margin: 20px 0;
-		padding: 0 30px;
-		text-align: center;
-	}
-
-	#menu-left-sidebar li a {
-		color: var(--font-color);
-		text-decoration: none;
-		font-size: 2.5rem;
-		line-height: 2.8rem;
-	}
-
-	/* sub-menu item styles */
-	.sub-menu {
-		display: none;
-		position: relative;
-    	top: 0px;
-    	left: 120px;
-    	background-color: var(--background-color);
-	}
-
-	.menu-item-has-children:hover .sub-menu {
-		display: block;
 	}
 
 	/* add breakpoint for site title font size in between tab and desktop */

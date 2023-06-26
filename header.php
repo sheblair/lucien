@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<script src="https://kit.fontawesome.com/fb23e24526.js" crossorigin="anonymous"></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -27,17 +28,7 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
-			<span></span>
-			<span></span>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lucien' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+			<?php wp_nav_menu( array( 'theme_location' => 'menu-1' ) ); ?>
 		</nav><!-- #site-navigation -->
 
 		<div class="site-branding">
