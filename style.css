@@ -1034,7 +1034,7 @@ TABLET STYLES
 		padding-top: 30px;
 		flex-direction: row;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: center;
 		margin: 20px;
 	}
 
@@ -1064,7 +1064,7 @@ TABLET STYLES
 	}
 }
 
-@media screen and (min-width: 900px) and (max-width: 1200px) {
+@media screen and (min-width: 900px) and (max-width: 1000px) {
 	.site-title a {
 		font-size: 3.3rem;
 	}
@@ -1073,6 +1073,12 @@ TABLET STYLES
 	.wp-block-image img {
 		width: 50%;
 		max-width: 50%;
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+	.site-title a {
+		font-size: 4rem;
 	}
 }
 
