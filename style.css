@@ -903,7 +903,7 @@ textarea {
 /* 
 *
 *
-Commented out :root styles here and instead included as "Additional CSS" in the Customize menu of the WP editor,
+CSS variables commented out here and instead included as "Additional CSS" in the Customize menu of the WP editor,
 kept here for record of original color choices made during initial site construction, June 2023
 *
 *
@@ -985,6 +985,7 @@ header {
 
 /* BREAKPOINT FOR XTRA SMALL PHONES */
 @media screen and (max-width: 374px) {
+	/* smaller site title on smallest phones */
 	.site-title a {
 		font-size: 1.4rem;
 	}
@@ -1055,7 +1056,7 @@ TABLET STYLES
 	}
 }
 
-/* BREAKPOINTS FOR HEADER ON LARGE TABLET */
+/* BREAKPOINTS FOR HEADER ON LARGER TABLET SIZES */
 @media screen and (min-width: 600px) and (max-width: 900px) {
 	.site-title a {
 		font-size: 2.1rem;
@@ -1084,7 +1085,7 @@ MEDIUM DESKTOP STYLES
 *
 */
 @media screen and (min-width: 1200px) {
-	/* hide the mobile menu*/
+	/* hide the mobile menu */
 	#site-navigation {
 		display: none;
 	}
@@ -1154,7 +1155,7 @@ MEDIUM DESKTOP STYLES
 		letter-spacing: 0.115em;
 	}
 
-	/* PAGE - DESKTOP */
+	/* PAGE TEMPLATE - DESKTOP */
 	/* hide page title */
 	.entry-header {
 		display: none;
@@ -1197,12 +1198,12 @@ MEDIUM DESKTOP STYLES
 		width: 45%;
 	}
 
-	/* ABOUT - DESKTOP */
+	/* ABOUT PAGE - DESKTOP */
 	.about-text, .about-images {
 		width: 45%;
 	}
 
-	/* OFFERINGS - DESKTOP */
+	/* OFFERINGS PAGE - DESKTOP */
 	.offerings-container {
 		display: flex;
 		flex-direction: column;
