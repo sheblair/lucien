@@ -544,9 +544,9 @@ a:active {
 	color: var(--link-color);
 }
 
-/* a:focus {
+a:focus {
 	outline: thin dotted;
-} */
+}
 
 a:hover,
 a:active {
