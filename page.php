@@ -17,13 +17,11 @@ get_header();
 	<div class="page-container">
 		<?php get_sidebar(); ?>
 
-		<main id="primary" class="site-main">
+		<main id="primary" class="single-page">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="single-page">
 					<?php the_content(); ?>
-				</div>
 
 			<?php endwhile; ?>
 

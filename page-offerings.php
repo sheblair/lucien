@@ -14,7 +14,7 @@ get_header();
 	<div class="page-container">
 		<?php get_sidebar(); ?>
 
-		<main id="primary" class="site-main">
+		<main id="offerings" class="single-page">
 			<?php while ( have_posts() ) : the_post(); 
 				$offerings_image_1 = get_field('offerings_image_1');
 				$offerings_image_2 = get_field('offerings_image_2');
@@ -23,30 +23,28 @@ get_header();
 				$size = "full";
 			?>
 
-			<div class="single-page" id="offerings">
-				<div class="offerings-images">
-					<figure>
-						<?php echo wp_get_attachment_image( $offerings_image_1, $size ); ?>
+			<div class="offerings-images">
+				<figure>
+					<?php echo wp_get_attachment_image( $offerings_image_1, $size ); ?>
+				</figure>
+				<?php if($offerings_image_2): ?>
+					<figure class="img">
+						<?php echo wp_get_attachment_image( $offerings_image_2, $size ) ?>
 					</figure>
-					<?php if($offerings_image_2): ?>
-						<figure class="img">
-							<?php echo wp_get_attachment_image( $offerings_image_2, $size ) ?>
-						</figure>
-					<?php endif; ?>
-					<?php if($offerings_image_3): ?>
-						<figure class="img">
-							<?php echo wp_get_attachment_image( $offerings_image_3, $size ) ?>
-						</figure>
-					<?php endif; ?>
-					<?php if($offerings_image_4): ?>
-						<figure class="img">
-							<?php echo wp_get_attachment_image( $offerings_image_4, $size ) ?>
-						</figure>
-					<?php endif; ?>
-				</div>
-				<div class="offerings-container">
-                    <?php get_template_part( 'template-parts/content', 'offerings' ); ?>
-				</div>
+				<?php endif; ?>
+				<?php if($offerings_image_3): ?>
+					<figure class="img">
+						<?php echo wp_get_attachment_image( $offerings_image_3, $size ) ?>
+					</figure>
+				<?php endif; ?>
+				<?php if($offerings_image_4): ?>
+					<figure class="img">
+						<?php echo wp_get_attachment_image( $offerings_image_4, $size ) ?>
+					</figure>
+				<?php endif; ?>
+			</div>
+			<div class="offerings-container">
+				<?php get_template_part( 'template-parts/content', 'offerings' ); ?>
 			</div>
 
 			<?php endwhile; ?> <!-- End of the loop -->

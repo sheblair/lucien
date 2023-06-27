@@ -1,6 +1,6 @@
 <?php
 /**
- * The header for our theme
+ * The header for the Lucien theme
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
@@ -16,7 +16,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<script src="https://kit.fontawesome.com/fb23e24526.js" crossorigin="anonymous"></script>
 
 	<?php wp_head(); ?>
 </head>
