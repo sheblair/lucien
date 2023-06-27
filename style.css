@@ -903,7 +903,7 @@ textarea {
 /* 
 *
 *
-Commented out here and instead included as "Additional CSS" in the Customize menu of the WP editor,
+Commented out :root styles here and instead included as "Additional CSS" in the Customize menu of the WP editor,
 kept here for record of original color choices made during initial site construction, June 2023
 *
 *
@@ -926,13 +926,6 @@ body {
     background: var(--background-color);
 }
 
-.fixed {
-	position: fixed;
-}
-
-/* links, headings, body text (bold, italic), 
-.wp-block-image, .size-full, other image size classes */
-
 /* 
 *
 *
@@ -943,10 +936,8 @@ MOBILE STYLES
 *
 */
 
-
-
 /* BASE STYLES - MOBILE */
-.page-container {
+.single-page {
 	margin: 25px;
 }
 
@@ -986,6 +977,10 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.offerings-images img {
+	padding-bottom: 40px;
 }
 
 /* BREAKPOINT FOR XTRA SMALL PHONES */
