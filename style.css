@@ -1194,7 +1194,7 @@ MEDIUM DESKTOP STYLES
 	.home-images {
 		display: flex;
 		flex-direction: column;
-		width: 40%;
+		width: 45%;
 	}
 
 	/* ABOUT - DESKTOP */
@@ -1253,6 +1253,12 @@ LARGE & XL DESKTOP STYLES
 	#about-page, #homepage {
 		margin-left: 260px;
 		margin-top: 40px;
+	}
+
+	img:not(.custom-logo),
+	.wp-block-image img {
+		width: 70%;
+		max-width: 70%;
 	}
 }
 
