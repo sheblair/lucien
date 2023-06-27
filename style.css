@@ -1001,26 +1001,25 @@ TABLET STYLES
 */
 @media screen and (min-width: 600px) {
 	/* GENERAL PAGE STYLES - TABLET */
-	#page {
+	.page-container {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
-		width: 100%;
 	}
 
-	.page-container {
+	.single-page {
 		width: 85%;
 		margin: 0;
 	}
 
-	/* tablet image styles */
+	/* IMAGE STYLES - TABLET */
 	figure {
 		display: flex;
 		justify-content: center;
 	}
 
-	img:not(.custom-logo) {
+	img:not(.custom-logo), 
+	.wp-block-image img {
 		width: 70%;
 		max-width: 70%;
 	}
@@ -1043,6 +1042,17 @@ TABLET STYLES
 		max-width: 20%;
 		margin-right: 20px;
 	}
+
+	/* OFFERINGS PAGE - TABLET */
+	.offerings-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.offering {
+		width: 80%;
+	}
 }
 
 /* BREAKPOINTS FOR HEADER ON LARGE TABLET */
@@ -1058,7 +1068,8 @@ TABLET STYLES
 		font-size: 3.3rem;
 	}
 
-	img:not(.custom-logo) {
+	img:not(.custom-logo),
+	.wp-block-image img {
 		width: 50%;
 		max-width: 50%;
 	}
@@ -1090,12 +1101,10 @@ MEDIUM DESKTOP STYLES
 		max-width: 90%;
 	}
 
-	/* SIDEBAR - DESKTOP */
-	/* #mega-menu-wrap-sidebar-menu #mega-menu-sidebar-menu {
-		display: flex;
-		flex-direction: column;
-		width: 200px;
-	} */
+	.wp-block-image img {
+		width: 70%;
+		max-width: 70%;
+	}
 
 	/* HEADER - DESKTOP */
 	header {
@@ -1145,8 +1154,6 @@ MEDIUM DESKTOP STYLES
 		letter-spacing: 0.115em;
 	}
 
-	/* add breakpoint for site title font size in between tab and desktop */
-
 	/* PAGE - DESKTOP */
 	/* hide page title */
 	.entry-header {
@@ -1159,30 +1166,19 @@ MEDIUM DESKTOP STYLES
 	}
 
 	.page-container {
-		display: flex;
-		margin: 220px 0 0 0;
-		width: 100%;
-	}
-
-	main {
-		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: flex-start;
-		justify-content: flex-start;
+		margin: 220px 0 0 0;
 		width: 100%;
 	}
 
 	.single-page {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start;
 		margin: 60px;
 		width: 90%;
-	}
-
-	#home, #about, #offerings {
-		flex-direction: row;
 	}
 
 	/* HOMEPAGE - DESKTOP */
