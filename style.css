@@ -983,6 +983,14 @@ header {
 	padding-bottom: 40px;
 }
 
+/* single offering post */
+.offering-single {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 /* BREAKPOINT FOR XTRA SMALL PHONES */
 @media screen and (max-width: 374px) {
 	/* smaller site title on smallest phones */
@@ -1232,6 +1240,11 @@ MEDIUM DESKTOP STYLES
 	.offering {
 		width: 70%;
 		margin: 10px 0;
+	}
+
+	/* single offering post - desktop */
+	.offering-single {
+		align-items: flex-start;
 	}
 }
 
