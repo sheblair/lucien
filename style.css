@@ -1132,16 +1132,21 @@ MEDIUM DESKTOP STYLES
 		width: 100%;
 	}
 
+	img.custom-logo {
+		width: 90%;
+	}
+
 	.custom-logo-link {
-		width: 280px;
-		min-width: 237px;
-		max-width: 250px;
+		width: 215px;
+		min-width: 215px;
+		max-width: 215px;
 		height: 220px;
 		border: 2px solid var(--border-color);
 		margin-right: 0;
 		padding: 0 15px;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 	}
 
 	.site-title {
@@ -1157,7 +1162,7 @@ MEDIUM DESKTOP STYLES
 	}
 
 	.site-title a {
-		font-size: 4.7rem;
+		font-size: 4rem;
 		letter-spacing: 0.115em;
 	}
 
@@ -1246,7 +1251,7 @@ LARGE & XL DESKTOP STYLES
 */
 @media screen and (min-width: 1440px) {
 	.site-title a {
-		font-size: 6rem;
+		font-size: 4.3rem;
 	}
 
 	#secondary {
