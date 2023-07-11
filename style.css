@@ -983,8 +983,8 @@ header {
 	padding-bottom: 40px;
 }
 
-/* single offering post */
-.offering-single {
+/* single post */
+.offering-single, .entry-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1242,8 +1242,8 @@ MEDIUM DESKTOP STYLES
 		margin: 10px 0;
 	}
 
-	/* single offering post - desktop */
-	.offering-single {
+	/* single post - desktop */
+	.offering-single, .entry-content {
 		align-items: flex-start;
 	}
 }
