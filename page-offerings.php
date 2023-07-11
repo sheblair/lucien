@@ -44,7 +44,7 @@ get_header();
 				<?php endif; ?>
 			</div>
 			<div class="offerings-container">
-				<?php get_template_part( 'template-parts/content', 'offerings' ); ?>
+				<?php get_template_part( 'template-parts/content-offerings', 'offerings' ); ?>
 			</div>
 
 			<?php endwhile; ?> <!-- End of the loop -->

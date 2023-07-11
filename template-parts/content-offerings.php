@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying Offerings posts
+ * Template part for displaying all Offerings posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
